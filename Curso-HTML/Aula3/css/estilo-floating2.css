@@ -1,0 +1,45 @@
+body{
+    font-size: 20px;
+    font-family: Arial;
+    text-align: left;
+}
+
+h1{
+    margin: 0;
+    text-align: center;
+}
+
+h1::before{
+    content: "HTML";
+}
+
+h1::after{
+    content: "Estudando as tags básicas";
+}
+
+article{
+    background-color: grey;
+}
+
+article p::first-letter{
+    font-size: 50px;
+    color: orange;
+}
+
+.coluna1, .coluna2{
+    background-color: #fa0;
+    float: left;
+    width: 48%;
+    text-align: justify;
+}
+
+.coluna2{
+    float: right;
+}
+
+div{
+    text-align: center;
+    background-color: yellow;
+    text-decoration: dotted;
+    clear: both;
+}

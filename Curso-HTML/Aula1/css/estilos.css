@@ -1,0 +1,24 @@
+h1{
+    font-family: Verdana;
+}
+
+h2{
+    font-family: sans-serif;
+}
+
+.teste1{
+    color: red;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration:solid;
+    text-align: center;
+}
+
+.teste2{
+    font-family:Impact;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: blue;
+}

@@ -1,0 +1,22 @@
+
+.cor1{
+    text-align: left;
+    background-color: yellow;
+    color: blue;
+}
+
+.cor2{
+    text-align: left;
+    background-color: rgb( 255 ,200, 0);
+    color: rgb(255, 255, 255)
+}
+
+.cor3{
+    text-align: left;
+    background-color: #a8944c;
+    color: #000;
+}
+
+.corDesc{
+    color: aqua;
+}

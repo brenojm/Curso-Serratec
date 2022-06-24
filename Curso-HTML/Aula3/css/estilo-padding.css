@@ -1,0 +1,36 @@
+body{
+    font-size: 24px;
+    font-family: Arial;
+    margin: 0;
+}
+
+/*
+p{
+    text-align: justify;
+    width: 600px;
+    border: 8px solid blue;
+    background-color:aqua;
+    Espaçamento de 20px superior e inferior, 60px nas laterais
+    padding: 20px 60px;
+    padding-left: 100px;
+} */
+
+p{
+    margin: 0;
+}
+
+
+.texto1, .texto2{
+    text-align: justify;
+    width: 600px;
+    border: 6px solid green;
+    background-color: grey;
+}
+
+.texto1{
+    margin: auto
+}
+
+.texto2{
+    margin-left: 0;
+}

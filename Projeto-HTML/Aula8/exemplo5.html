@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var nomes= [];
+        var cursos = ["Java","PHP","Phyton","r"];
+
+        nomes.push("José");
+        nomes.push("Ana");
+        nomes.push("Oscar");
+
+
+        document.write(nomes[0]);
+        document.write(nomes[5]);
+
+        for (let index = 0; index < nomes.length; index++) {
+            document.write(nomes[index]);
+            
+        }
+
+        var vetor= new Array(10);
+
+        for (let index = 0; index < vetor.length; index++) {
+            vetor[index] = index * 2;
+            document.write(vetor[index] + "<br>");
+            
+        }
+        
+
+        //Insere no final do vetor
+        nomes.push("José");
+        nomes.push("Ana");
+        nomes.push("Oscar");
+        //Insere um elemento na primeira posição
+        nomes.unshift("Maria");
+
+        //Elementos que deseja remover
+        nomes.shift(1,2);
+
+        //Quantos elementos a partir de uma posição vc deseja remover
+        nomes.splice(1,1);
+
+        //Saber a posição do elemento no vetor
+        nomes.indexOf("Maria");
+
+        //Ordem Crescente somente por sorte e decrescente usar sort e reverse
+        nomes.sort;
+        nomes.reverse;
+
+        for (let index = 0; index < nomes.length; index++) {
+            document.write(nomes[index]);
+        }
+
+        var num1 = [1, 5, 8, 10, 50, 60];
+        var numeros;
+        //recebe todos os elementos de um vetor e atribui a variável numeros separado pelo delimitador
+        numeros = num1.join("|");
+
+        var num2 = [100, 200, 300];
+        var num4 = [1000, 2000, 3000];
+        //Concat faz a junção de varios vetores
+        var num3 = num1.concat(num2).concat(num4);
+
+
+        document.write(num3);
+
+
+    </script>
+</body>
+</html>

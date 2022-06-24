@@ -1,0 +1,26 @@
+.container {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #d1d1d1;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-container {
+  width: 60%;
+  height: 420px;
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

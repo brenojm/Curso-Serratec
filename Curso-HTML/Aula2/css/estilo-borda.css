@@ -1,0 +1,23 @@
+body{
+    font-size: 24px;
+    font-family: Arial;
+}
+
+h1{
+    border-width: thin;
+    border-color:blue;
+    border-style:solid;
+}
+
+a{  /*shorthand*/
+    border: thick dashed red;
+    border-bottom: 5px solid green;
+}
+
+p{
+    width: 250px;
+    height:250px;
+    border:10px dotted black;
+    background-color: burlywood;
+    border-radius: 20px 50px 30px ;
+}
