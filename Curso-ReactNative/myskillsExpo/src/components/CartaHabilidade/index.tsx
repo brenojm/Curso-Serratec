@@ -1,6 +1,6 @@
 import React from "react";
 import { Image, ImageProps, ImageSourcePropType, Text, TouchableOpacity, TouchableOpacityProps } from "react-native";
-import { HabilidadeProps } from "../../screens/skills";
+import { HabilidadeProps } from "../../screens/Skills";
 import { styles } from "./styles";
 
 import Gato from "../../assets/images/gatoMilitar.jpg"

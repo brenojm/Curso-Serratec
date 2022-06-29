@@ -1,7 +1,10 @@
 import React, { useState } from "react";
-import { View, FlatList, Text } from "react-native";
+import { View, FlatList, Text, TouchableOpacity } from "react-native";
 import { CartaItemMagico } from "../../components/CartaItemMagico";
+import { ModalAtributos } from "../../components/modais/ModalAtributos";
+
 import { styles } from "./styles";
+
 
 
 export interface ItemMagico {
@@ -9,27 +12,31 @@ export interface ItemMagico {
     preco: string,
 }
 
+
+
 export const Loja = () => {
     const [listaItensMagicos, setListaItansMagicos] = useState<ItemMagico[]>([
         {
-            nome: "breno1",
+            nome: "Armadura",
             preco: "R$1000000,00"
         },
         {
-            nome: "breno2",
+            nome: "Espada",
             preco: "R$1000000,00"
         },
         {
-            nome: "breno3",
+            nome: "Arco",
             preco: "R$1000000,00"
         },
         {
-            nome: "breno4",
+            nome: "Anel",
             preco: "R$1000000,00"
         },
 
     ]);
     const [carregando, setCarregando] = useState<boolean>(true);
+    const [visibildiadeModal, setVisibilidadeModal] = useState<boolean>(true);
+    const [itemMagico, setItemMagico] = useState<ItemMagico>();
 
 
     return <View style={styles.container}>
@@ -38,9 +45,16 @@ export const Loja = () => {
             data={listaItensMagicos}
             renderItem={({ item }) => {
                 return <CartaItemMagico
+                    setVisibilidadeModal={setVisibilidadeModal}
+                    setItemMagico={setItemMagico}
                     item={item}
                 />
             }}
+        />
+        <ModalAtributos
+            itemMagico={itemMagico}
+            visibilidadeModal={visibildiadeModal}
+            setVisibilidadeModal={setVisibilidadeModal}
         />
     </View>
 
